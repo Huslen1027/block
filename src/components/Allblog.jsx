@@ -1,31 +1,43 @@
 import React from "react";
-export default function Allblog(props) {
+export default function Allblog() {
   return (
-    <div className="w-[392px] h-[488px] p-4 bg-white rounded-xl border border-gray-200 flex-col justify-center items-center gap-4 inline-flex">
-      <img src={props.url} className="w-[360px] h-60 rounded-md" />
-      <div className="self-stretch h-[200px] p-2 flex-col justify-start items-start gap-5 flex">
-        <div className="self-stretch h-32 flex-col justify-start items-start gap-4 flex">
-          <div className="px-2.5 py-1 bg-indigo-500 bg-opacity-5 rounded-md justify-center items-center gap-1 inline-flex">
-            <div className="text-indigo-500 text-sm font-medium font-['Work Sans'] leading-tight">
-              Technology
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col items-center gap-20">
+        <div className="flex flex-col items-center gap-8">
+          <div className="header flex flex-col items-start gap-8 ">
+            <h1 className="w-[184px] text-[#181A2A] text-xl">All Blog Post</h1>
+            <div className="flex w-[1216px] items-center gap-[30px] ">
+              <div className="flex items-center gap-5">
+                <p className="">All</p>
+                <p>Design</p>
+                <p>Travel</p>
+                <p>Fashion</p>
+                <p>Technology</p>
+                <p>Branding</p>
+              </div>
+              <p className="view all"></p>
             </div>
           </div>
-          <div className="self-stretch text-gray-900 text-2xl font-semibold font-['Work Sans'] leading-7">
-            {props.title}
-          </div>
-        </div>
-        <div className="justify-start items-center gap-5 inline-flex">
-          <div className="justify-start items-center gap-3 flex">
-            <img
-              className="w-9 h-9 rounded-[28px]"
-              src="https://via.placeholder.com/36x36"
-            />
-            <div className="text-neutral-400 text-base font-medium font-['Work Sans'] leading-normal">
-              Ernie Smith
+          <div className="content flex flex-col items-start gap-5 w-[1216px] h-[1468px]">
+            <div className="flex items-start gap-5">
+              <div className="flex w-[392px] p-4 flex-col justify-center items-center gap-4 border-[#E8E8EA] bg-[#FFF] rounded-xl">
+                <img src="w-[360px] h-[240px] rounded-md" alt="" />
+                <div className="flex p-2 flex-col items-start gap-5 ">
+                  <div className="flex flex-col gap-4 items-start ">
+                    <button className="flex py-1 px-[10px] justify-center items-center gap-1 rounded-md bg-gray-700">
+                      <p className="text-[14px] text-[#4B6BFB] ">Technology</p>
+                    </button>
+                    <p></p>
+                  </div>
+                  <div className="flex items-center gap-5">
+                    <p className=""></p>
+                  </div>
+                  <div className="flex items-center gap-5">
+                    <p className="text-[#97989F] text-base">August 20, 2022</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="text-neutral-400 text-base font-normal font-['Work Sans'] leading-normal">
-            August 20, 2022
           </div>
         </div>
       </div>

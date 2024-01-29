@@ -2,30 +2,30 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex h-[495px] pt-[64px] px-[352px] flex-col items-start gap-[25px] border-[#E8E8EA]">
+    <div className="flex  w-full h-[495px] pt-[64px] px-[352px] flex-col items-start gap-[25px] border-[#E8E8EA] bg-white">
       <div className="flex w-[1215px] items-start gap-5">
         <div className="flex w-[289px] flex-col gap-6 items-start">
           <div className="flex flex-col items-start gap-3">
             <p>About</p>
-            <p>
+            <p className="text-black">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
             </p>
           </div>
           <div className="flex flex-col items-start gap-1">
-            <p>Email : hvslenhvslen566@gmail.com</p>
-            <p>Phone : 85250765</p>
+            <p className="text-black">Email : hvslenhvslen566@gmail.com</p>
+            <p className="text-black">Phone : 85250765</p>
           </div>
         </div>
         <div className="flex w-[521px] justify-center gap-20 items-start">
           <div className="flex flex-col items-start gap-2">
-            <p>Home</p>
-            <p>Block</p>
-            <p>Content</p>
+            <p className="text-black">Home</p>
+            <p className="text-black">Block</p>
+            <p className="text-black">Content</p>
           </div>
         </div>
-        <div className="w-[144px] h-[16px]">
+        <div className="w-[144px] h-[16px] flex gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -149,16 +149,16 @@ export default function Footer() {
             />
           </svg>
           <div className="flex flex-col items-start gap-[2px]">
-            <p>MetaBlog</p>
-            <p>© All Rights Reserved.</p>
+            <p className="text-black">MetaBlog</p>
+            <p className="text-black">© All Rights Reserved.</p>
           </div>
         </div>
         <div className="flex justify-end items-center gap-4">
-          <p>Terms of Usevv</p>
+          <p className="text-black">Terms of Usevv</p>
           <p>|</p>
-          <p>Privacy Policy</p>
-          <p>|</p>
-          <p>Cookie Policy</p>
+          <p className="text-black">Privacy Policy</p>
+          <p className="text-black">|</p>
+          <p className="text-black">Cookie Policy</p>
         </div>
       </div>
     </div>
