@@ -29,11 +29,11 @@ export default function Footer() {
             <p className="text-[16px] text-[#3B3C4A] font-normal">Contact</p>
           </div>
         </div>
-        <div className="w-[144px] h-[16px] flex gap-2">
+        <div className="w-[144px] h-[16px] flex gap-4">
           <img src="/facebook.svg" alt="" />
           <img src="/twitter.svg" alt="" />
           <img src="/ig.svg" alt="" />
-          <img src=".in.svg" alt="" />
+          <img src="/in.svg" alt="" />
         </div>
       </div>
       <div className="flex w-[1216px] h-[95px] items-center gap-16 py-[32px] border-t">
