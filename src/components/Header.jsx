@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import React from "react";
-
+import Blog from "@/pages/Blog";
 export default function Header() {
+  const router = useRouter();
   return (
-    <div className=" ml-[10px] flex w-[1917px] py-[32px] px-[350px] items-start gap-[10px] flex-col ">
+    <div className="  flex w-[1917px] py-[32px] px-[500px] items-start gap-[10px] flex-col ">
       <div className="flex items-start gap-[118px]">
         <svg
           className="w-[158px] h-[36px]"
@@ -64,13 +66,28 @@ export default function Header() {
         <div className="flex items-center gap-[21px]">
           <div className="flex w-[667px] justify-center items-center gap-10 ">
             <div className="flex items-center gap-1">
-              <p className="text-base text-[#3B3C4A]">Home </p>
+              <button
+                onClick={() => router.push("/")}
+                className="text-base text-[#3B3C4A]"
+              >
+                Home
+              </button>
             </div>
             <div className="flex items-center gap-1">
-              <p className="text-base text-[#3B3C4A]">Blog</p>
+              <button
+                onClick={() => router.push("Blog")}
+                className="text-base text-[#3B3C4A]"
+              >
+                Blog
+              </button>
             </div>
             <div className="flex items-center gap-1">
-              <p className="text-base text-[#3B3C4A]">Contant</p>
+              <button
+                onClick={() => router.push("Contant")}
+                className="text-base text-[#3B3C4A]"
+              >
+                Contact
+              </button>
             </div>
           </div>
           <div className="flex items-center gap-10">
