@@ -13,7 +13,7 @@ export default function Trending(props) {
             {Trendings.map((e) => (
               <div className="flex w-[293px] h-[320px] items-start relative">
                 <img
-                  className="w-[289px] h-[320px] rounded-xl"
+                  className="w-[289px] h-[320px] object-cover rounded-xl"
                   src={e.social_image}
                   alt=""
                 />

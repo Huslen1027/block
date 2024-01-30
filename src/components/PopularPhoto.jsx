@@ -22,7 +22,7 @@ export default function PopularPhoto(props) {
               </div>
             </div>
           </div>
-          <div className="forward inline-flex justify-center items-center rounded-md w-10 h-10 border-[#696A75]">
+          <div className="forward inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75] mr-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="9"
@@ -38,7 +38,7 @@ export default function PopularPhoto(props) {
               />
             </svg>
           </div>
-          <div className="back inline-flex justify-center items-center rounded-md w-10 h-10 border-[#696A75]">
+          <div className="back inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="9"
