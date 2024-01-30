@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex  w-full h-[495px] pt-[64px] px-[352px] flex-col items-start gap-[25px] border-[#E8E8EA] bg-white">
+    <div className="flex  w-full h-[495px] pt-[64px] px-[352px] flex-col items-start gap-[25px] border-[#E8E8EA] bg-[#F6F6F7] mt-20">
       <div className="flex w-[1215px] items-start gap-5">
         <div className="flex w-[289px] flex-col gap-6 items-start">
           <div className="flex flex-col items-start gap-3">
-            <p>About</p>
+            <p className="bg-[]">About</p>
             <p className="text-black">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
