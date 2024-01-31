@@ -1,10 +1,9 @@
 import { useRouter } from "next/router";
 import React from "react";
-import Blog from "@/pages/Blog";
 export default function Header() {
   const router = useRouter();
   return (
-    <div className="  flex w-[1917px] py-[32px] px-[500px] items-start gap-[10px] flex-col ">
+    <div className="  flex w-[1200px] py-[32px]  m-auto items-start gap-[10px] flex-col ">
       <div className="flex items-start gap-[118px]">
         <svg
           className="w-[158px] h-[36px]"
@@ -83,7 +82,7 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-1">
               <button
-                onClick={() => router.push("Contant")}
+                onClick={() => router.push("Contact")}
                 className="text-base text-[#3B3C4A]"
               >
                 Contact
@@ -93,7 +92,7 @@ export default function Header() {
           <div className="flex items-center gap-10">
             <div className="flex gap-4 items-center">
               <input
-                className="pl-4 py2 pr-2 w-[166px] bg-[#F4F4F5] "
+                className="pl-4 py2 pr-2 w-[166px] bg-[#F4F4F5] text-black"
                 type="text"
                 placeholder="search"
               />

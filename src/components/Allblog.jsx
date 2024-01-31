@@ -22,7 +22,7 @@ export default function Allblog(props) {
           <div className="content flex flex-col  gap-5 w-[1216px] h-[1468px] ">
             <div className="flex gap-5 flex-wrap">
               {Allblogs.map((e) => (
-                <div className=" w-[392px] h-[476px] flex p-4 flex-col justify-center items-center gap-4d border border-[#E8E8EA] bg-[#FFF] rounded-xl">
+                <div className=" w-[392px] h-[476px] flex p-4 flex-col justify-between items-center  border border-[#E8E8EA] bg-[#FFF] rounded-xl">
                   <img
                     src={e.social_image}
                     className="w-[360px] h-[240px] rounded-md"

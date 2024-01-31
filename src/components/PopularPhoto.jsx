@@ -23,36 +23,40 @@ export default function PopularPhoto(props) {
             </div>
           </div>
           <div className="forward inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75] mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="9"
-              height="17"
-              viewBox="0 0 9 17"
-              fill="none"
-            >
-              <path
-                d="M8.5 16L1 8.5L8.5 1"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="17"
+                viewBox="0 0 9 17"
+                fill="none"
+              >
+                <path
+                  d="M8.5 16L1 8.5L8.5 1"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
           <div className="back inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="9"
-              height="17"
-              viewBox="0 0 9 17"
-              fill="none"
-            >
-              <path
-                d="M1 1L8.5 8.5L1 16"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="17"
+                viewBox="0 0 9 17"
+                fill="none"
+              >
+                <path
+                  d="M1 1L8.5 8.5L1 16"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       ))}
