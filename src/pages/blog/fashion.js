@@ -1,11 +1,10 @@
 import Navigationbar from "@/components/Navigationbar";
 import BlogCard from "@/components/BlogCard";
-export default function Page({ data }) {
-  console.log("blog", data);
+const Page = ({ data }) => {
+  console.log("blog:", data);
   return (
     <div className="w-[1220px] m-auto flex flex-col gap-8">
       <Navigationbar />
-      <p>wrawp</p>
       <div className="flex flex-wrap  gap-5">
         {data.map((blog) => (
           <BlogCard blog={blog} />
@@ -13,14 +12,17 @@ export default function Page({ data }) {
       </div>
     </div>
   );
-}
-
+};
+export default Page;
 export async function getServerSideProps(context) {
   const { query } = context;
-  const response = await fetch("https://dev.to/api/articles?per_page=15");
+  const response = await fetch(
+    "https://dev.to/api/articles?tag=fashion&per_page=15"
+  );
   const data = await response.json();
-  console.log(data);
   return {
-    props: { data },
+    props: {
+      data,
+    },
   };
 }

@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="flex w-[294px] h-[133px] p-[16px] flex-col gap-[10px] items-start rounded-xl border border-[#E8E8EA]">
               <h1 className="text-[#000] text-[24px] font-semibold">Contact</h1>
               <p className="text-base text-[#696A75] font-normal">
-                313-332-8662 info@email.com
+                85250765 hvslenhvslen566@gmail.com
               </p>
             </div>
           </div>

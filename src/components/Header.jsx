@@ -74,7 +74,7 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-1">
               <button
-                onClick={() => router.push("Blog")}
+                onClick={() => router.push("blog")}
                 className="text-base text-[#3B3C4A]"
               >
                 Blog
