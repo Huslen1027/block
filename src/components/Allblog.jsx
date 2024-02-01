@@ -5,10 +5,9 @@ export default function Allblog({ Allblogs }) {
     <div className="flex flex-col justify-center items-center ">
       <div className="flex flex-col items-center gap-20">
         <div className="flex flex-col items-center gap-8">
-          <div className="header flex flex-col items-start gap-8 ">
-            <Navigationbar />
-          </div>
+          <div className="header flex flex-col items-start gap-8 "></div>
           <div className="content flex flex-col  gap-5 w-[1216px] h-[1468px] ">
+            <Navigationbar />
             <div className="flex gap-5 flex-wrap">
               {Allblogs.map((e) => (
                 <div className=" w-[392px] h-[476px] flex p-4 flex-col justify-between items-center  border border-[#E8E8EA] bg-[#FFF] rounded-xl">

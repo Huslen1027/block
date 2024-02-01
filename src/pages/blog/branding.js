@@ -16,7 +16,9 @@ const Page = ({ data }) => {
 export default Page;
 export async function getServerSideProps(context) {
   const { query } = context;
-  const response = await fetch("https://dev.to/api/articles?tag=branding");
+  const response = await fetch(
+    "https://dev.to/api/articles?tag=branding&per_page=15"
+  );
   const data = await response.json();
   return {
     props: {

@@ -1,6 +1,6 @@
 import Navigationbar from "@/components/Navigationbar";
 import BlogCard from "@/components/BlogCard";
-import Navigationbar from "@/components/Navigationbar";
+
 const Page = ({ data }) => {
   console.log("blog:", data);
   return (
@@ -17,7 +17,9 @@ const Page = ({ data }) => {
 export default Page;
 export async function getServerSideProps(context) {
   const { query } = context;
-  const response = await fetch("https://dev.to/api/articles?tag=technology");
+  const response = await fetch(
+    "https://dev.to/api/articles?tag=technology&per_page=15"
+  );
   const data = await response.json();
   return {
     props: {

@@ -5,7 +5,6 @@ export default function Page({ data }) {
   return (
     <div className="w-[1220px] m-auto flex flex-col gap-8">
       <Navigationbar />
-      <p>wrawp</p>
       <div className="flex flex-wrap  gap-5">
         {data.map((blog) => (
           <BlogCard blog={blog} />
@@ -16,7 +15,6 @@ export default function Page({ data }) {
 }
 
 export async function getServerSideProps(context) {
-  const { query } = context;
   const response = await fetch("https://dev.to/api/articles?per_page=15");
   const data = await response.json();
   console.log(data);

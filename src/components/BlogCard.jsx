@@ -4,7 +4,7 @@ export default function BlogCard({ blog }) {
       <div>
         <img
           className="h-60 w-[360px] object-fit rounded-md"
-          src={blog.cover_image}
+          src={blog.social_image}
           alt=""
         />
       </div>
