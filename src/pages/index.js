@@ -1,7 +1,6 @@
 import PopularPhoto from "@/components/PopularPhoto";
 import Allblog from "@/components/Allblog";
 import Trending from "@/components/Trending";
-import Button from "@/components/Button";
 
 export default function Home(props) {
   const { Populars, Trendings, Allblogs } = props;
@@ -11,7 +10,6 @@ export default function Home(props) {
       <PopularPhoto Populars={Populars} />
       <Trending Trendings={Trendings} />;
       <Allblog Allblogs={Allblogs} />;
-      <Button />
     </div>
   );
 }

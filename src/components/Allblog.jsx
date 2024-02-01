@@ -5,7 +5,6 @@ export default function Allblog({ Allblogs }) {
     <div className="flex flex-col justify-center items-center ">
       <div className="flex flex-col items-center gap-20">
         <div className="flex flex-col items-center gap-8">
-          <div className="header flex flex-col items-start gap-8 "></div>
           <div className="content flex flex-col  gap-5 w-[1216px] h-[1468px] ">
             <Navigationbar />
             <div className="flex gap-5 flex-wrap">

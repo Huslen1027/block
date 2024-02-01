@@ -5,7 +5,7 @@ export default function PopularPhoto(props) {
   return (
     <div className="slider w-[1216px] h-[651px] flex-shrink mt-20 relative carousel">
       {Populars.map((e, key) => (
-        <div id={key} className="flex flex-col carousel-item">
+        <div id={key} className="flex flex-col  carousel-item">
           <img
             className="w-[1216px] h-[600px] flex-shrink rounded-xl "
             src={e.cover_image}
