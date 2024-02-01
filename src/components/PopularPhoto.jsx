@@ -3,9 +3,9 @@ export default function PopularPhoto(props) {
   const { Populars } = props;
 
   return (
-    <div className="slider w-[1216px] h-[651px] flex-shrink mt-20 relative">
-      {Populars.map((e) => (
-        <div>
+    <div className="slider w-[1216px] h-[651px] flex-shrink mt-20 relative carousel">
+      {Populars.map((e, key) => (
+        <div id={key} className="flex flex-col carousel-item">
           <img
             className="w-[1216px] h-[600px] flex-shrink rounded-xl "
             src={e.cover_image}
@@ -22,41 +22,43 @@ export default function PopularPhoto(props) {
               </div>
             </div>
           </div>
-          <div className="forward inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75] mr-2">
-            <a href="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="9"
-                height="17"
-                viewBox="0 0 9 17"
-                fill="none"
-              >
-                <path
-                  d="M8.5 16L1 8.5L8.5 1"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-          <div className="back inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75]">
-            <a href="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="9"
-                height="17"
-                viewBox="0 0 9 17"
-                fill="none"
-              >
-                <path
-                  d="M1 1L8.5 8.5L1 16"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
+          <div className="flex gap-2 ">
+            <div className="forward inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75] mr-2">
+              <a href={`#${key == 1 ? 0 : key - 1}`}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="17"
+                  viewBox="0 0 9 17"
+                  fill="none"
+                >
+                  <path
+                    d="M8.5 16L1 8.5L8.5 1"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div className="back inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75]">
+              <a href={`#${key == 0 ? 1 : key + 1}`}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="17"
+                  viewBox="0 0 9 17"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L8.5 8.5L1 16"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       ))}
