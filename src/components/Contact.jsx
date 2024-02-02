@@ -59,7 +59,7 @@ export default function Contact() {
                 />
                 <button className="inline-flex py-[10px] px-[16px] justify-center flex-col items-center rounded-md bg-[#4B6BFB] w-[110px] h-[40px]">
                   <p className="text-[#fff] text-center text-[14px] font-medium">
-                    Sent a Message
+                    Sent a Message sda
                   </p>
                 </button>
               </div>
