@@ -17,17 +17,16 @@ const Page = ({ data }) => {
       <Navigationbar />
       <div className="flex flex-wrap  gap-5">
         {articles.map((blog) => (
-          <BlogCard blog={blog} />
+          <BlogCard blog={blog} id={blog.id} />
         ))}
       </div>
       <div className="m-auto ">
         <button
-          className="border border-[#696A75] rounded-lg py-2.5 px.2.5 text-[#696A75]"
+          className="border border-[#696A75] rounded-lg py-2.5 px.2.5 text-[#696A75] w-[100px]"
           onClick={loadMoreHandler}
         >
           Load more
         </button>
-        console.log(articles);
       </div>
     </div>
   );

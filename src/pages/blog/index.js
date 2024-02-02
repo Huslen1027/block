@@ -23,7 +23,7 @@ export default function Page({ data }) {
       </div>
       <div className="m-auto">
         <button
-          className="border border-[#696A75] rounded-lg py-2.5 px-2.5 text-[#696A75]"
+          className="border border-[#696A75] rounded-lg py-2.5 px-2.5 text-[#696A75] w-[100px]"
           onClick={loadMoreHandler}
         >
           Load More
