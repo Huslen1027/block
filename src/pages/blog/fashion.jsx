@@ -19,6 +19,7 @@ const Page = ({ data }) => {
         {articles.map((blog) => (
           <BlogCard blog={blog} id={blog.id} />
         ))}
+        pupu
       </div>
       <div className="m-auto ">
         <button
