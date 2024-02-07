@@ -3,8 +3,20 @@ import Allblog from "@/components/Allblog";
 import Trending from "@/components/Trending";
 
 export default function Home(props) {
+  // async function getArticle() {
+  //   const res = await fetch("http://localhost:4000/api/blogs");
+  //   const article = await res.json();
+  //   console.log(article);
+  // }
+  // getArticle();
+  // return (
+  //   <main>
+  //     <p>{"article.title"}</p>
+  //   </main>
+  // );
   const { Populars, Trendings, Allblogs } = props;
   console.log("trend=", Populars, Trendings, Allblogs);
+  ddfs;
   return (
     <div className="flex h-[3005px] flex-col items-center gap-25 bg-white">
       <PopularPhoto Populars={Populars} />
