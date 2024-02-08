@@ -35,7 +35,7 @@ export default function Home(props) {
 }
 
 export const getStaticProps = async () => {
-  const Popular = await fetch("https://dev.to/api/articles?top=5&per_page=9");
+  const Popular = await fetch("https://dev.to/api/articles?top=1&per_page=9");
   const Trending = await fetch(
     "https://dev.to/api/articles?top=1&per_page=4&page=2"
   );

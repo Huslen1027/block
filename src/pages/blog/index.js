@@ -1,6 +1,8 @@
 import Navigationbar from "@/components/Navigationbar";
 import BlogCard from "@/components/BlogCard";
 import { useState } from "react";
+import Link from "next/link";
+const title = ["All", "design", "travel", "fashion", "technology", "branding"];
 export default function Page({ data }) {
   const [Articles, setArticles] = useState(data);
   const [pageNumber, setpageNumber] = useState(1);
@@ -12,7 +14,7 @@ export default function Page({ data }) {
     setArticles([...Articles, ...datas]);
     setpageNumber(pageNumber + 1);
   }
-  console.log("blog", data);
+
   return (
     <div className="w-[1220px] m-auto flex flex-col gap-8">
       <Navigationbar />

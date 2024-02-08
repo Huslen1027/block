@@ -1,8 +1,6 @@
 import parse from "html-react-parser";
 
 const Page = ({ data }) => {
-  console.log(data.body_html);
-  console.log("data");
   return (
     <div className="w-[1220px] max-h-full m-auto gap-[50px] flex flex-col justify-center">
       <div className="font-semibold text-4xl text-[#181A2A] flex justify-center">
