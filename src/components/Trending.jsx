@@ -1,9 +1,7 @@
 import React from "react";
-export default function Trending(props) {
-  const { Trendings } = props;
-
+export default function Trending({ Trendings }) {
   return (
-    <div className="flex felx-col gap-[10px] items-center h-[390px]">
+    <div className="flex flex-col gap-[10px] items-center h-[390px]">
       <div className="flex w-[1230px] h-[390px] flex-col items-center">
         <div className="flex gap-[30px] items-start flex-col w-[1231px]">
           <div className="header flex items-start gap-8">

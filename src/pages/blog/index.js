@@ -6,7 +6,7 @@ export default function Page({ data }) {
   const [pageNumber, setpageNumber] = useState(1);
   async function loadMoreHandler() {
     const response = await fetch(
-      `https://dev.to/api/articles?per_page=6&page=${pageNumber}`
+      `https://dev.to/api/articles?per_page=3&page=${pageNumber}`
     );
     const datas = await response.json();
     setArticles([...Articles, ...datas]);

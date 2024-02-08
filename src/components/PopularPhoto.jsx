@@ -1,7 +1,5 @@
 import React from "react";
-export default function PopularPhoto(props) {
-  const { Populars } = props;
-
+export default function PopularPhoto({ Populars }) {
   return (
     <div className="slider w-[1216px] h-[651px] flex-shrink mt-20 relative carousel">
       {Populars.map((e, key) => (
@@ -30,7 +28,6 @@ export default function PopularPhoto(props) {
                   width="9"
                   height="17"
                   viewBox="0 0 9 17"
-                  fill="none"
                 >
                   <path
                     d="M8.5 16L1 8.5L8.5 1"
@@ -48,7 +45,6 @@ export default function PopularPhoto(props) {
                   width="9"
                   height="17"
                   viewBox="0 0 9 17"
-                  fill="none"
                 >
                   <path
                     d="M1 1L8.5 8.5L1 16"
