@@ -16,7 +16,7 @@ export default function Home(props) {
   }
 
   const { Populars, Trendings, Allblogs } = props;
-  console.log("trend=", Populars, Trendings, Allblogs);
+
   return (
     <div className="flex h-[3005px] flex-col items-center gap-25 bg-white">
       <PopularPhoto Populars={Populars} />
@@ -43,8 +43,6 @@ export const getStaticProps = async () => {
   const Populars = await Popular.json();
   const Trendings = await Trending.json();
   const Allblogs = await Allblog.json();
-
-  console.log("post=", Popular, Trending, Allblog);
 
   return {
     props: { Populars, Trendings, Allblogs },

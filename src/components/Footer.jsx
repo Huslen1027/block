@@ -1,8 +1,9 @@
 import React from "react";
-
+import { useRouter } from "next/router";
 export default function Footer() {
+  const router = useRouter();
   return (
-    <div className="flex h-[495px] pt-[64px] pl-[450px] pr-[352px] flex-col items-start gap-[25px] border-t bg-[#F6F6F7]">
+    <div className="flex items-center pt-[64px] flex-col gap-[25px] border-t bg-[#F6F6F7]">
       <div className="flex w-[1215px] items-start gap-5">
         <div className="flex w-[289px] flex-col items-start gap-6">
           <div className="flex flex-col items-start gap-3">
@@ -24,9 +25,24 @@ export default function Footer() {
         </div>
         <div className="flex w-[521px] justify-center items-start gap-[88px]">
           <div className="flex flex-col items-start gap-3">
-            <p className="text-[16px] text-[#3B3C4A] font-normal">Home</p>
-            <p className="text-[16px] text-[#3B3C4A] font-normal">Blog</p>
-            <p className="text-[16px] text-[#3B3C4A] font-normal">Contact</p>
+            <button
+              onClick={() => router.push("/")}
+              className="text-[16px] text-[#3B3C4A] font-normal"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => router.push("blog")}
+              className="text-[16px] text-[#3B3C4A] font-normal"
+            >
+              Blog
+            </button>
+            <button
+              onClick={() => router.push("Contact")}
+              className="text-[16px] text-[#3B3C4A] font-normal"
+            >
+              Contact
+            </button>
           </div>
         </div>
         <div className="w-[144px] h-[16px] flex gap-4">

@@ -5,7 +5,12 @@ export default function Header() {
   return (
     <div className="  flex w-[1200px] py-[32px]  m-auto items-start gap-[10px] flex-col ">
       <div className="flex items-start gap-[118px]">
-        <img className="" src="/logo.svg" alt="" />
+        <img
+          onClick={() => router.push("/")}
+          className=""
+          src="/logo.svg"
+          alt=""
+        />
         <div className="flex items-center gap-[21px]">
           <div className="flex w-[667px] justify-center items-center gap-10 ">
             <div className="flex items-center gap-1">

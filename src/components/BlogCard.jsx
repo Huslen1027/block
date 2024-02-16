@@ -13,8 +13,11 @@ export default function BlogCard({ blog }) {
         </div>
         <div className="p-2 flex flex-col gap-5 h-[200px] justify-between">
           <div className="flex flex-wrap gap-2 ">
-            {blog.tag_list.map((e) => (
-              <button className="mb-4 px-2.5 py-1 flex justify-center items-center rounded-md text-[#4B6BFB] bg-[#4b6bfb0d] font-medium text-sm ">
+            {blog.tag_list.map((e, index) => (
+              <button
+                key={index}
+                className="mb-4 px-2.5 py-1 flex justify-center items-center rounded-md text-[#4B6BFB] bg-[#4b6bfb0d] font-medium text-sm "
+              >
                 {e}
               </button>
             ))}

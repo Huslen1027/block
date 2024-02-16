@@ -1,7 +1,6 @@
 import Navigationbar from "@/components/Navigationbar";
 import BlogCard from "@/components/BlogCard";
 import { useState } from "react";
-import Link from "next/link";
 const title = ["All", "design", "travel", "fashion", "technology", "branding"];
 export default function Page({ data }) {
   const [Articles, setArticles] = useState(data);
@@ -38,7 +37,7 @@ export default function Page({ data }) {
 export async function getServerSideProps(context) {
   const response = await fetch("https://dev.to/api/articles?per_page=15");
   const data = await response.json();
-  console.log(data);
+
   return {
     props: { data },
   };

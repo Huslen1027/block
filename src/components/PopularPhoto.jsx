@@ -20,7 +20,7 @@ export default function PopularPhoto({ Populars }) {
               </div>
             </div>
           </div>
-          <div className="flex gap-2 ">
+          <div className="flex gap-2 justify-end">
             <div className="forward inline-flex justify-center items-center rounded-md w-10 h-10  border border-[#696A75] mr-2">
               <a href={`#${key == 1 ? 0 : key - 1}`}>
                 <img src="/leftsum.svg" alt="" />
