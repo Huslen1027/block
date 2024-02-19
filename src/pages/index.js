@@ -12,7 +12,7 @@ export default function Home(props) {
     );
     const datas = await response.json();
     setArticles([...articles, ...datas]);
-    setpageNumber(pageNumber + 1);
+    setpageNumber((pageNumber) => pageNumber + 1);
   }
 
   const { Populars, Trendings, Allblogs } = props;

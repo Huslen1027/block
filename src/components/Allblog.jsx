@@ -12,7 +12,7 @@ export default function Allblog({ Allblogs }) {
                 <Link href={`/blog/articles/${blog.id}`}>
                   <div
                     key={index}
-                    className=" w-[392px] h-[476px] flex p-4 flex-col justify-between items-center  border border-[#E8E8EA] bg-[#FFF] rounded-xl "
+                    className=" w-[392px] h-[476px] flex p-4 flex-col justify-between items-center  border border-[#E8E8EA] bg-[#FFF] rounded-xl hover:scale-105 ease-in-out duration-300"
                   >
                     <img
                       src={blog.social_image}
